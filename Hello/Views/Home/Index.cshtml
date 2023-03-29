@@ -1,0 +1,23 @@
+﻿@model Hello.Models.Greeting
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form asp-action="Index" method="post">
+        <div>
+            <p>
+                <label asp-for="Name">Enter name</label>
+                <input asp-for="Name">
+            </p>
+            <button type="submit">Submit Name<</button>
+        </div>
+    </form>
+</body>
+</html>
